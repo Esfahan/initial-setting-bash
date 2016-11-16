@@ -45,13 +45,15 @@ while read -p "Do you want to run localectl to set LANG as utf8?[y/n] " yn ; do
                 case $lang in
                     [1]* ) {
                         set_lang "en_US.utf8"
+                        break
                     };;
                     [2]* ) {
                         set_lang "ja_JP.utf8"
+                        break
                     };;
                     * ) echo "Please answer 1 or 2.";;
                 esac
-                break
+
             done
             break
         };;
