@@ -81,7 +81,7 @@ fi
 ADDED_COMMENT='added my settings'
 cat ~/.vimrc | grep "added my settings" > /dev/null 2>&1
 if [ $? = 1 ]; then
-    cat ./vimrc >> ~/.vimrc
+    cat ./dotfiles/vimrc >> ~/.vimrc
 else
     echo 'alreday exists.'
 fi
