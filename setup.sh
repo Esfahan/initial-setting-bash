@@ -76,12 +76,43 @@ echo "edit ~/.vimrc"
 echo "----------------------"
 if [ ! -e ~/.vimrc ]; then
     touch ~/.vimrc
+    echo 'touch ~/.vimrc'
 fi
 
 ADDED_COMMENT='added my settings'
-cat ~/.vimrc | grep "added my settings" > /dev/null 2>&1
+cat ~/.vimrc | grep "${ADDED_COMMENT}" > /dev/null 2>&1
 if [ $? = 1 ]; then
     cat ./dotfiles/vimrc >> ~/.vimrc
+    echo 'added.'
+else
+    echo 'alreday exists.'
+fi
+
+# bash_profile
+echo "----------------------"
+echo "edit ~/.bash_profile"
+echo "----------------------"
+if [ ! -e ~/.bash_profile ]; then
+    touch ~/.bash_profile
+    echo 'touch ~/.bash_profile'
+fi
+if [ ! -e ~/.git-prompt.sh ]; then
+    touch ~/.git-prompt.sh
+    echo 'touch ~/.git-prompt.sh'
+fi
+if [ ! -e ~/.git-completion.bash ]; then
+    touch ~/.git-completion.bash
+    echo 'touch ~/.git-completion.bash'
+fi
+
+ADDED_COMMENT_BP='added my settings for git'
+cat ~/.bash_profile | grep "${ADDED_COMMENT_BP}" > /dev/null 2>&1
+if [ $? = 1 ]; then
+    # https://github.com/git/git/tree/master/contrib/completion
+    cat ./dotfiles/git-prompt.sh > ~/.git-prompt.sh
+    cat ./dotfiles/git-completion.bash > ~/.git-completion.bash
+    cat ./dotfiles/bash_profile >> ~/.bash_profile
+    echo 'added.'
 else
     echo 'alreday exists.'
 fi
