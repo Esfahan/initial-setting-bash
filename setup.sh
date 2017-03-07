@@ -161,5 +161,3 @@ tmux list-client > /dev/null 2>&1
 if [ $? = 1 ]; then
   tmux
 fi
-
-exec $SHELL -l
