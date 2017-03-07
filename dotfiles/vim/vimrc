@@ -1,0 +1,11 @@
+"added my settings
+"Disable automatic comment insertion
+autocmd FileType * setlocal formatoptions-=ro
+"for full-width symbol
+set ambiwidth=double
+highlight Comment ctermfg=lightblue
+
+autocmd BufRead,BufNewFile *.py setfiletype python
+autocmd BufRead,BufNewFile *.rb setfiletype ruby
+autocmd BufRead,BufNewFile *.sh setfiletype sh
+autocmd BufRead,BufNewFile *.php setfiletype php
