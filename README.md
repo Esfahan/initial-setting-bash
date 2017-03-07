@@ -1,11 +1,13 @@
 # initial-setting-bash
-initial setting for bash on CentOS7
+initial setting for bash on CentOS6 or 7
 
-- localectl
-- set LC_CTYPE on .bash_profile
 - set timezone
+- install tmux
+- add .tmux.conf
 - install vim-enhanced
-- install .vimrc
+- add .vimrc
+- add git-completion.bash, git-prompt.sh
+- modify .bash_profile
 
 ## Usage
 
