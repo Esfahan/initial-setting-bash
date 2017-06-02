@@ -78,10 +78,14 @@ $cmd
 date
 
 # tmux
-echo "----------------------"
-echo "install tmux"
-echo "----------------------"
-sudo yum -y install tmux
+#echo "----------------------"
+#echo "install tmux"
+#echo "----------------------"
+#sudo yum -y install tmux
+
+# install tmux2.4
+git clone https://github.com/Esfahan/installer-tmux.git
+bash ./installer-tmux/setup.sh
 
 # tmux.conf
 echo "----------------------"
