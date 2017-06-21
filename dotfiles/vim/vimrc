@@ -4,6 +4,7 @@ autocmd FileType * setlocal formatoptions-=ro
 "for full-width symbol
 set ambiwidth=double
 highlight Comment ctermfg=lightblue
+set enc=utf-8
 
 autocmd BufRead,BufNewFile *.py setfiletype python
 autocmd BufRead,BufNewFile *.rb setfiletype ruby
