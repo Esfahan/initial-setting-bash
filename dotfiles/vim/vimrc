@@ -6,7 +6,9 @@ set ambiwidth=double
 highlight Comment ctermfg=lightblue
 set enc=utf-8
 
-autocmd BufRead,BufNewFile *.py setfiletype python
-autocmd BufRead,BufNewFile *.rb setfiletype ruby
-autocmd BufRead,BufNewFile *.sh setfiletype sh
-autocmd BufRead,BufNewFile *.php setfiletype php
+#autocmd BufRead,BufNewFile *.py setfiletype python
+#autocmd BufRead,BufNewFile *.rb setfiletype ruby
+#autocmd BufRead,BufNewFile *.sh setfiletype sh
+#autocmd BufRead,BufNewFile *.php setfiletype php
+
+set tabstop=2 shiftwidth=2 expandtab
