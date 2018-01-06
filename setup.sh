@@ -163,5 +163,6 @@ fi
 
 tmux list-client > /dev/null 2>&1
 if [ $? = 1 ]; then
+  cd ~
   tmux
 fi
