@@ -6,6 +6,7 @@ set ambiwidth=double
 highlight Comment ctermfg=lightblue
 set enc=utf-8
 set paste
+set hlsearch
 
 "autocmd BufRead,BufNewFile *.py setfiletype python
 "autocmd BufRead,BufNewFile *.rb setfiletype ruby
