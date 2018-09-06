@@ -9,5 +9,5 @@ alias gh='git log --graph --oneline --decorate=full'
 alias gl='git config -l'
 
 # prompt
-#export PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '
-export PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\[\033[35m\](py:$(pyenv version-name))\[\033[00m\]\$ '
+#export PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[36m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '
+export PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[36m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\[\033[35m\](py:$(pyenv version-name))\[\033[00m\]\$ '
