@@ -1,3 +1,14 @@
+let OSTYPE = system('uname')
+if OSTYPE == "Darwin\n"
+  :set term=xterm-256color
+  :syntax on
+endif
+
+augroup vimrcEx
+  au BufRead * if line("'\"") > 0 && line("'\"") <= line("$") |
+  \ exe "normal g`\"" | endif
+augroup END
+
 "added my settings
 "Disable automatic comment insertion
 autocmd FileType * setlocal formatoptions-=ro
@@ -7,12 +18,6 @@ highlight Comment ctermfg=lightblue
 set enc=utf-8
 set paste
 set hlsearch
-
-"Move to last position
-augroup vimrcEx
-  au BufRead * if line("'\"") > 0 && line("'\"") <= line("$") |
-  \ exe "normal g`\"" | endif
-augroup END
 
 "autocmd BufRead,BufNewFile *.py setfiletype python
 "autocmd BufRead,BufNewFile *.rb setfiletype ruby
