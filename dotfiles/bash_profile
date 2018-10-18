@@ -43,5 +43,5 @@ else
     echo "no ssh-agent"
 fi
 
-# Ignore exit with Ctrl+D until 100 times
+# Ignore exit with Ctrl+d until 100 times
 IGNOREEOF=100
