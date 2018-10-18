@@ -42,3 +42,6 @@ elif [ -S $agent ]; then
 else
     echo "no ssh-agent"
 fi
+
+# Ignore exit with Ctrl+D until 100 times
+IGNOREEOF=100
