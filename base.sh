@@ -64,6 +64,9 @@ if [ ! -e ~/.git-completion.bash ]; then
   echo 'touch ~/.git-completion.bash'
 fi
 
+# my_profile
+cp ./dotfiles/my_profile ~/.my_profile
+
 ADDED_COMMENT_BP='added my settings'
 cat ~/.bash_profile | grep -w "${ADDED_COMMENT_BP}" > /dev/null 2>&1
 if [ $? = 1 ]; then
@@ -71,7 +74,6 @@ if [ $? = 1 ]; then
   cat ./dotfiles/git/git-prompt.sh > ~/.git-prompt.sh
   cat ./dotfiles/git/git-completion.bash > ~/.git-completion.bash
   cat ./dotfiles/bash_profile >> ~/.bash_profile
-  cp ./dotfiles/my_profile ~/.my_profile
   echo 'added.'
 else
   echo 'alreday exists.'
