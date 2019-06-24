@@ -12,8 +12,8 @@ alias gl='git config -l'
 #export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
 # pyenv
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-export PYENV_ROOT=/usr/local/opt/pyenv
+#if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+#export PYENV_ROOT=/usr/local/opt/pyenv
 
 case ${OSTYPE} in
     darwin*)
