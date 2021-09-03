@@ -84,3 +84,11 @@ if [ $? = 1 ]; then
   cd ~
   tmux
 fi
+
+if [ ! -d ~/.vim/bundle/vim-vue/ ]; then
+  git clone https://github.com/posva/vim-vue.git ~/.vim/bundle/vim-vue
+fi
+
+if [ ! -d ~/.vim/bundle/typescript-vim/ ]; then
+  git clone https://github.com/leafgarland/typescript-vim.git ~/.vim/bundle/typescript-vim
+fi
