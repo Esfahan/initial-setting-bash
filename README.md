@@ -18,6 +18,7 @@ $ /bin/sh setup.sh
 ## For vue and ts
 
 ```
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 git clone https://github.com/posva/vim-vue.git ~/.vim/bundle/vim-vue
 git clone https://github.com/leafgarland/typescript-vim.git ~/.vim/bundle/typescript-vim
 ```
